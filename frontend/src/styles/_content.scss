@@ -1,0 +1,7 @@
+.content {
+	display: flex;
+	height: 85rem;
+    @media only screen and (max-width: 1160px) {
+		flex-direction: column;
+	}			
+}

@@ -1,0 +1,10 @@
+.empty {
+	
+	&-heading {
+		display: inline-block;
+		transform: translateY(150%) translateX(30%);
+		font-size: 2.5rem;
+		font-weight: 200; 
+		letter-spacing: 2.3px;
+	}
+}

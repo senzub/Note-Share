@@ -1,0 +1,52 @@
+.header {
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        to bottom left,
+        rgba(99, 164, 254,1),
+        rgba(55,123,246, 1));
+    color: #fff;
+    align-items: center;
+    box-shadow: 0 0 .3rem rgba(55,123,246, 1);
+
+    @media only screen and (max-width: 680px) {
+        height: 8rem;
+    }
+    @media only screen and (max-width: 600px) {
+        height: 10rem;         
+    }          
+
+    &__link, &__link:visited, &__link:link {
+        color: #fff;
+        font-weight: 600;
+        margin-left: 4.5rem; 
+        margin-top: 4rem;
+        position: absolute;
+        top: -1.8rem; 
+
+        @media only screen and (max-width: 436px) {
+            font-size: 2.5rem;
+            margin-left: 3rem; 
+        }
+        @media only screen and (max-width: 380px) {
+            font-size: 2.2rem;
+            margin-left: 2rem; 
+        }        
+    }
+    
+}
+
+#signin {
+    @media only screen and (max-width: 600px) {
+        margin-top: 1.3rem;
+    }
+    @media only screen and (max-width: 400px) {
+        transform: translateX(4%);
+    } 
+
+    @media only screen and (max-width: 360px) {
+        margin-top: 1rem;
+        margin-right: -1rem;
+    }   
+}

@@ -1,0 +1,79 @@
+.notepads {
+
+	width: 120rem;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 10rem;
+	color: #fff;
+
+    @media only screen and (max-width: 1086px) {
+        width: 100%;
+		margin-top: 2rem;
+		margin-bottom: 3rem;        
+    }	
+  
+
+	&__heading {
+		font-size: 2.1rem;
+		margin-left: 14rem;
+		display: inline-block;
+		padding-top: 3rem;
+
+	    @media only screen and (max-width: 652px) {
+			margin-left: 10rem;
+	    }	  		
+	}
+
+	&__list {
+		color: #fff;
+	}
+
+	&__item {
+		height: 10rem;
+		background-color: #fff;
+		margin-bottom: 1.2rem;
+
+		// box-shadow: 0rem 10rem 2rem rgba(#B2BAC8, 1);
+		box-shadow: 1rem 0.9rem 5rem -2.8rem rgba(#B2BAC8, 1);
+		border-radius: 7px;
+		display: flex;
+		justify-content: space-between;
+	
+
+
+		transition: all .1s;
+		&:hover {
+            transform: scale(1.03) translateY(-.5rem);
+            box-shadow: 1rem 0.9rem 5rem -2rem rgba(#B2BAC8, 1);
+            z-index: 20;
+		}
+	}
+	&__item-title-author {
+		margin-top: 1.7rem;
+		margin-left: 5rem;
+	}
+
+
+	&__item-title {
+		font-size: 2rem;
+		letter-spacing: 1.3px;
+		font-weight: 550;
+		color: rgba(#342D39,1);
+	}
+	&__item-author {
+		margin-top: -.5rem;
+		font-size: 1.7rem;
+		margin-left: 3rem;
+		color: rgba(#B0B7C8,1);
+		letter-spacing: .8px;
+	}
+
+	&__item-date > * {
+		font-size: 1.5rem;
+		color: rgba(#6073A0,1);
+		margin-right: 7rem;
+		padding-top: 1.4rem;
+	}
+	
+
+}

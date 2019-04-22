@@ -1,0 +1,201 @@
+.sidebar {
+	flex: 0 0 21.5%;	
+	border-right: .2rem solid rgba(170,170,170,.4);
+	color: rgba(0,0,0,1);
+	background-color: rgba(248,248,248,1);
+
+	overflow: hidden;
+	text-align: left;
+
+    @media only screen and (max-width: 1160px) {
+    	flex: 0 0 15%;
+    	display: flex;
+		flex-direction: row;
+    }	
+
+
+	&:hover {
+		overflow: auto;		
+	}
+
+	&-links, &-links:visited, &-links:link {
+
+		color: black;
+		
+		width: 37rem;
+		display: block;
+		transition: all .2s;
+		height: 20rem;
+		padding: 3rem;
+		&:hover {
+			background-color: rgba(238,238,238,1);
+		}
+
+	    @media only screen and (max-width: 1160px) {
+	    	padding: 2rem;
+	    	height: 12.7rem;
+	    	width: 19rem;
+	    }		
+	}
+
+	&-heading {
+		padding-top: 2.3rem;
+		margin-left: 3rem; 
+		font-size: 3rem;
+		letter-spacing: 1.9px;
+		font-weight: 100;
+
+	    @media only screen and (max-width: 1160px) {
+		    font-size: 2.7rem;
+			margin-left: 5.7rem; 	
+
+	    }			
+	}
+
+	&-links-ul {
+		margin-top: 2rem;
+		list-style-type: none;
+		display: inline-block;
+	    @media only screen and (max-width: 1160px) {
+	    	display: flex;
+	    	margin-top: 0rem;
+	    }				
+	}
+
+
+	&-add-btn {
+		border: none;
+		transform: translateX(44%); 
+		font-size: 1.3rem;
+		padding: 1rem 1.2rem;
+	    background-image: linear-gradient(
+	        to bottom left,
+	        rgba(99, 164, 254,.1),
+	        rgba(55,123,246, .1));
+	    cursor: pointer;
+		color: #fff;
+		letter-spacing: 1px;
+	    border-radius: 5px;	
+	    box-shadow: 0 0 2rem -.6rem rgba(0,0,0,.3);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .2s;	
+	
+	    @media only screen and (max-width: 1160px) {
+		    background-image: linear-gradient(
+		        to bottom left,
+		        rgba(99, 164, 254,1),
+		        rgba(55,123,246, 1));   
+		    font-size: 1.1rem;	   
+		    transform: translateX(10%);  
+	    }	
+		@media only screen and (min-width: 1160px) {
+			&:hover {
+		        transform: translateY(-2px) translateX(56px);
+		        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+			    background-image: linear-gradient(
+			        to bottom left,
+			        rgba(99, 164, 254,1),
+			        rgba(55,123,246, 1));               		
+			}
+		    &:active {
+		        outline: none;
+		        transform: translateY(-1px) translateX(56px);
+		        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+			    @media only screen and (max-width: 1160px) {
+				     transform: translateY(0px) translateX(10%);
+			    }		        
+		    }			
+		}
+
+	}
+	&-add-btn-container {
+		height: 3rem;
+		padding:3rem;
+	    @media only screen and (max-width: 1160px) {
+	    	padding: 2rem;
+	    
+	    }			
+	}
+
+	&-link-title {
+		font-weight: 300;
+		font-size: 2.1rem;
+		margin-left: 3rem;
+	    @media only screen and (max-width: 1160px) {
+	    	font-size: 1.5rem;
+	    	margin-left: 1.3rem;
+	    
+	    }			
+	}
+
+	&-link-date {
+		font-weight: 500;
+		font-size: 1.4rem;
+		margin-left: 4rem;	
+	    @media only screen and (max-width: 1160px) {
+	    	font-size: 1rem;
+	    	margin-left: 1.7rem;
+	    	margin-top: -1rem;
+
+	    }	
+
+	}
+	&-delete-btn {
+		transform: translateX(10%); 
+		font-size: 1.3rem;
+		padding: 1rem 1.2rem;
+		margin: 1.3rem;
+		border: none;
+	    background-image: linear-gradient(
+	        to bottom left,
+	        rgba(#9d0a0a,.1),
+	        rgba(#6d0707, .1));
+	    cursor: pointer;
+		color: #fff;
+		letter-spacing: 1px;
+	    border-radius: 5px;	
+	    box-shadow: 0 0 2rem -.6rem rgba(0,0,0,.3);
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .2s;			
+
+	    @media only screen and (max-width: 1160px) {
+		    background-image: linear-gradient(
+		        to bottom left,
+		        rgba(#9d0a0a,1),
+		        rgba(#6d0707, 1));
+		    font-size: 1.2rem;
+		    line-height: 1.6;  
+		    transform: translateX(0%); 
+	    }	
+	    @media only screen and (max-width: 1160px) {
+			font-size: 1rem;
+			padding: 1rem 1rem;
+			margin: 0rem;    	
+	    }		    
+
+	}   		
+    @media only screen and (min-width: 1160px) {
+		&-delete-btn:hover {
+	        transform: translateY(-2px) translateX(15px);
+	        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+		    background-image: linear-gradient(
+		        to bottom left,
+		        rgba(#9d0a0a,1),
+		        rgba(#6d0707, 1));                		
+		}
+	    &-delete-btn:active {
+	        outline: none;
+	        transform: translateY(-1px) translateX(15px);
+	        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+		    @media only screen and (max-width: 1160px) {
+			    transform: translateX(0%); 
+		    }        
+	    }
+    }
+
+}
+.active {
+	background-color: rgba(238,238,238,1);
+}	

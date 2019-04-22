@@ -1,0 +1,16 @@
+.notepad-title {
+	font-family: "Montserrat" sans-serif;
+	font-size: 3.4rem;
+	margin-left: 4rem;
+	background-color: transparent;
+	border: none;
+	letter-spacing: 1px;
+	font-weight: 100;
+
+	width: 90%;
+	cursor: text;
+	height: 10vh;
+	&:focus {
+		outline: none;
+	}
+}

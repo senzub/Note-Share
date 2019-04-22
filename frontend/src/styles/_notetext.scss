@@ -1,0 +1,96 @@
+.notetext {
+	width: 27rem;
+	height: 15rem;
+	font-size: 1.7rem;
+	background-color: rgba(250,250,250,1);
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,.1);
+	border: .1px solid rgba(190,190,190,.5); 
+	border-radius: 14px;
+
+	&:hover {
+		cursor: grab;
+
+	}
+	&:active {
+		cursor: grabbing;
+	}
+
+	&-content {
+		width: 80%;
+		height: 90%;
+		margin: auto;
+		transform: translateY(10%);
+		overflow: hidden;
+
+		&:hover {
+			overflow: auto;
+		}
+
+		p {
+			width: 100%;
+			height: 100%;	
+			&:hover {
+				cursor: pointer;
+			}	
+		}
+	}
+
+	&-delete {
+		display: inline-block;
+		position: absolute;
+		right: 2.3rem;
+		z-index: 10; 
+		&-btn {
+			font-weight: 300;
+			font-size: 2rem;
+			color: rgba(100,100,100,.65);
+
+			&:hover {
+				color: black;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&-textarea {
+		border: none;
+		width: 80%;
+		height: 90%;
+		transform: translatex(13%) translateY(10%);
+		resize: none;
+		overflow: hidden;
+		background-color: transparent;
+		white-space: pre-wrap;
+		&:hover {
+			overflow: auto;
+		}		
+		&:focus {
+			outline: none;
+		}		
+	}
+
+	p {
+		white-space: pre-wrap;
+	}
+
+	::-webkit-scrollbar {
+	  width: 0.6rem;
+	}
+	::-webkit-scrollbar-track {
+	  background: transparent; 
+	}
+
+	::-webkit-scrollbar-thumb {
+	  background: rgba(100,100,100,.3); 
+	  border-radius: 4px;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555; 
+	  cursor: pointer;
+	}	
+	&::selection {
+		color: red;
+	}
+}
